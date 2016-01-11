@@ -7,15 +7,15 @@
     android:padding="@dimen/size_16">
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/registration_id_wrapper"
+        android:id="@+id/truck_name_wrapper"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/registration_id"
+            android:id="@+id/truck_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/registration_id_hint" />
+            android:hint="@string/truck_name_hint" />
 
     </android.support.design.widget.TextInputLayout>
 
