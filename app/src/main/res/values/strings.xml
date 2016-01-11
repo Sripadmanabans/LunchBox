@@ -1,3 +1,6 @@
 <resources>
+
     <string name="app_name">Lunch Box</string>
+    <string name="class_cast_exception_message">The activity must implement SwitchInterface.</string>
+
 </resources>
