@@ -2,6 +2,8 @@ package zerobase.us.lunchbox.base;
 
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 
 import zerobase.us.lunchbox.interfaces.SwitchInterface;
@@ -28,5 +30,15 @@ public class BaseActivity extends AppCompatActivity implements SwitchInterface {
         }
 
         transaction.commit();
+    }
+
+    @Override
+    public void openActivity(Context context, Class<?> activityToOpen) {
+        if(context == null) {
+            throw new NullPointerException("The context is null");
+        }
+
+        Intent intent = new Intent(context, activityToOpen);
+        startActivity(intent);
     }
 }
