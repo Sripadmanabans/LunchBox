@@ -1,4 +1,4 @@
-package zerobase.us.lunchbox.base;
+package zerobase.us.lunchbox.base.api;
 
 import com.octo.android.robospice.request.retrofit.RetrofitSpiceRequest;
 
