@@ -1,6 +1,7 @@
 package zerobase.us.lunchbox.interfaces;
 
 import android.app.Fragment;
+import android.content.Context;
 
 /**
  * This is the interface used to switch fragments.
@@ -16,4 +17,12 @@ public interface SwitchInterface {
      *                       stack. Else the fragment is not added to it.
      */
     void openFragment(Fragment fragment, boolean addToBackStack);
+
+    /**
+     * This is the function that needs to be overridden to open a new activity.
+     *
+     * @param context        This is the context from which we move to the next activity.
+     * @param activityToOpen This is the activity to move to.
+     */
+    void openActivity(Context context, Class<?> activityToOpen);
 }
