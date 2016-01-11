@@ -1,9 +1,10 @@
 package zerobase.us.lunchbox;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class LunchBoxActivity extends AppCompatActivity {
+import zerobase.us.lunchbox.base.BaseActivity;
+
+public class LunchBoxActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
