@@ -2,5 +2,8 @@
 
     <string name="app_name">Lunch Box</string>
     <string name="class_cast_exception_message">The activity must implement SwitchInterface.</string>
+    <string name="registration_id_hint">Registration ID</string>
+    <string name="activation_code">Activation Code</string>
+    <string name="register_button">Register</string>
 
 </resources>
