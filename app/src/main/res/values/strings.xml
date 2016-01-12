@@ -1,9 +1,24 @@
 <resources>
 
     <string name="app_name">Lunch Box</string>
+
+    <!--Error Messages-->
     <string name="class_cast_exception_message">The activity must implement SwitchInterface.</string>
+
+    <!--Registration Page-->
     <string name="truck_name_hint">Truck Name</string>
     <string name="activation_code_hint">Activation Code</string>
     <string name="register_button">Register</string>
+
+    <!--Shop page-->
+    <string name="truck_name_title">Truck Name</string>
+    <string name="edit_title">Edit</string>
+    <string name="address_line1_hint">Address #1</string>
+    <string name="address_line2_hint">Address #2</string>
+    <string name="city_hint">City</string>
+    <string name="state_hint">State</string>
+    <string name="today_specials">Today\'s Specials</string>
+    <string name="shop_status_open">Open Now</string>
+    <string name="shop_status_close">Close Now</string>
 
 </resources>
