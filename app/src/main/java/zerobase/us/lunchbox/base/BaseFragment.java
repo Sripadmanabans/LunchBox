@@ -12,14 +12,14 @@ import zerobase.us.lunchbox.interfaces.SwitchInterface;
  */
 public class BaseFragment extends Fragment {
 
-    protected SwitchInterface switchFragment;
+    protected SwitchInterface switchPage;
 
     @SuppressWarnings("deprecation")
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         try {
-            switchFragment = (SwitchInterface) activity;
+            switchPage = (SwitchInterface) activity;
         } catch (ClassCastException exception) {
             throw new ClassCastException(getString(R.string.class_cast_exception_message));
         }
@@ -28,6 +28,6 @@ public class BaseFragment extends Fragment {
     @Override
     public void onDetach() {
         super.onDetach();
-        switchFragment = null;
+        switchPage = null;
     }
 }
