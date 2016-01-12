@@ -9,6 +9,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import zerobase.us.lunchbox.R;
 import zerobase.us.lunchbox.base.BaseActivity;
+import zerobase.us.lunchbox.fragments.ShopFragment;
 
 /**
  * This is the activity that is used to open and close the truck shop.
@@ -26,9 +27,12 @@ public class ShopActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop);
+        fragmentContainerID = R.id.fragment_container;
         ButterKnife.bind(this);
         setSupportActionBar(toolbar);
 
         collapsingToolbarLayout.setTitle(getString(R.string.app_name));
+
+        openFragment(new ShopFragment(), false);
     }
 }
