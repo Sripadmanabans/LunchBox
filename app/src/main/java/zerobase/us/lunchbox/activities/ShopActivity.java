@@ -29,6 +29,7 @@ public class ShopActivity extends BaseActivity {
         setContentView(R.layout.activity_shop);
         fragmentContainerID = R.id.fragment_container;
         ButterKnife.bind(this);
+
         setSupportActionBar(toolbar);
 
         collapsingToolbarLayout.setTitle(getString(R.string.app_name));
